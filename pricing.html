@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Thu Aug 08 2019 03:21:31 GMT+0000 (UTC)  -->
+<html data-wf-page="5d3fe86a03c3feede6276ed8" data-wf-site="5d2d514fb78ea809e8838a4c">
+
+<head>
+  <meta charset="utf-8">
+  <title>GafDesign - Marketing para coach</title>
+  <meta content="Pricing" property="og:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/sijitemplate.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script
+    type="text/javascript">WebFont.load({ google: { families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Gothic A1:regular,500,600,700,900"] } });</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+
+  <link href="icons/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="icons/webclip.png" rel="apple-touch-icon">
+
+
+  <style>
+    .contacto {
+      margin-bottom: 20px;
+      margin-right: 50px;
+    }
+
+    .contacto-datos {
+      margin-bottom: 20px;
+      margin-left: 50px;
+      font-weight: bold;
+    }
+
+    .contacto-datos-2 {
+      margin-bottom: 20px;
+      margin-left: 85px;
+      font-weight: bold;
+    }
+
+    .correcto {
+      border-radius: 25px;
+      display: none;
+      margin-top: 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: blue;
+      color: azure;
+    }
+
+    .fallo {
+      border-radius: 25px;
+      display: none;
+      margin-top: 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: crimson;
+      color: azure;
+    }
+  </style>
+
+
+
+
+</head>
+
+<body>
+  <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar ondark w-nav">
+    <div class="container">
+      <div class="col flex lg-12 no-padding-bottom">
+        <a href="index.html" class="brand w-nav-brand">
+          <img src="images/gaf@2x_azul.png" width="175" alt="Logotipo GAFDESIGN" class="logo-image">
+        </a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <!-- <a href="features.html" class="nav-link ondark w-nav-link">Características</a> -->
+          <a href="index.html" class="button-nav-link w-inline-block">Home</a>
+          <a href="pricing.html" class="button-nav-link w-inline-block">Precios del hosting</a>
+          <!-- <a href="blog.html" class="nav-link ondark w-nav-link">Blog</a> -->
+
+          <a href="contact.html" class="button-nav-link w-inline-block">
+            <div class="button-nav-link-text color-2">Formulario de Contacto</div>
+          </a>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="icon w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-header dark">
+    <div class="container">
+      <div class="col lg-12">
+        <div class="ultra-big-fat-paragraph no-margin-bottom">Aquí encontrarás los precios de hosting para nuestros
+          clientes</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div class="section no-padding-bottom">
+    <div class="container">
+      <div class="col lg-6 md-12">
+        <div class="pricing-card"><img src="images/planesHosting_father.png" width="64" alt="" class="pricing-image">
+          <div class="pricing-title">Father Plan</div>
+          <div class="pricing-price price-1">9€/mes</div>
+          <div class="pricing-description">
+            Servidor VPS en Linux<br>‍
+            20GB SSD<br>
+            ‍Tráfico Ilimitado<br>‍
+            4 CPU vCores(*)<br>‍
+            8 GB RAM(*)<br>‍
+            500 Mbits/sg de conexión<br>‍
+          </div>
+          <p style="font-size: small;">(*) Sistema compartido</p>
+          <p style="font-size: small;">Precios sin IVA</p>
+          <p style="font-size: small;">Facturación semestral</p>
+          <!-- <a href="#" class="button-ghost button-pricing w-inline-block"> -->
+          <!-- <div class="button-ghost-text">let&#x27;s go</div> -->
+          <!-- </a> -->
+        </div>
+      </div>
+      <div class="col lg-6 md-12">
+        <div class="pricing-card border-2"><img src="images/planesHosting_mother.png" width="64" alt=""
+            class="pricing-image">
+          <div class="pricing-title">Mom Plan</div>
+          <div class="pricing-price price-2">12€/mes</div>
+          <div class="pricing-description">
+            Servidor VPS en Linux<br>‍
+            40GB SSD<br>
+            ‍Tráfico Ilimitado<br>‍
+            4 CPU vCores(*)<br>‍
+            8 GB RAM(*)<br>‍
+            500 Mbits/sg de conexión<br>‍
+          </div>
+          <p style="font-size: small;">(*) Sistema compartido</p>
+          <p style="font-size: small;">Precios sin IVA</p>
+          <p style="font-size: small;">Facturación semestral</p>
+          <!-- <a href="#" class="button-ghost button-pricing w-inline-block">
+            <div class="button-ghost-text">let&#x27;s go</div>
+          </a> -->
+        </div>
+      </div>
+      <div class="col lg-6 md-12">
+        <div class="pricing-card pricing-popular"><img src="images/planesHosting_family.png" width="64" alt=""
+            class="pricing-image">
+          <div class="pricing-title">Family Plan</div>
+          <div class="pricing-price price-3">15€/mes</div>
+          <div class="pricing-description">
+            Servidor VPS en Linux<br>‍
+            60GB SSD<br>
+            ‍Tráfico Ilimitado<br>‍
+            4 CPU vCores(*)<br>‍
+            8 GB RAM(*)<br>‍
+            500 Mbits/sg de conexión<br>‍
+          </div>
+          <p style="font-size: small;">(*) Sistema compartido</p>
+          <p style="font-size: small;">Precios sin IVA</p>
+          <p style="font-size: small;">Facturación semestral</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="col lg-6 md-12">
+          <div class="ultra-big-fat-paragraph no-margin-bottom">Coméntanos tus necesidades y trataremos de resolverlas
+          </div>
+          <div class="margin-bottom">Características del hospedaje</div>
+
+          <div class="iconbox"><img src="images/EU.png" width="64" height="64" alt="" class="iconbox-image">
+            <div>
+              <div>
+                <h3 class="iconbox-title">100% alojamiento en la UE</h3>
+                <div>Todos los servidores se encuentran exclusivamente en los centros de datos de STRATO en Alemania.
+                  Esto
+                  significa que sus
+                  datos están protegidos por la Ley de Protección de Datos de Alemania, una de las más estrictas del
+                  mundo.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="iconbox"><img src="images/SSL.png" width="64" height="64" alt="" class="iconbox-image">
+            <div>
+              <h3 class="iconbox-title">Certificados SSL</h3>
+              <div>Aumenta la confianza de tus clientes y logra un buen posicionamiento de tu sitio web en los motores
+                de búsqueda. Los
+                certificados SSL encriptan toda la información que entra y sale de tu web, protegiéndola así frente a
+                terceros.</div>
+            </div>
+          </div>
+
+
+          <div class="iconbox"><img src="images/backup.png" width="64" height="64" alt="" class="iconbox-image">
+            <div>
+              <h3 class="iconbox-title">BackUp Control</h3>
+              <div>Protege tus datos con BackupControl y optimiza tus intervalos de copias de seguridad. El propio
+                sistema realiza una copia de seguridad diaria y la conserva durante una semana.</div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col lg-6 md-12">
+          <div class="rich-text w-richtext">
+            <h4>¿Puedo disponer de un servidor exclusivamente dedicado a mi aplicación?. </h4>
+            <p>Por supuesto, si prevees que tu aplicación va a necesitar unas prestaciones superiores a nuestros
+              servidores "standard", disponemos de servidores dispuestos a la medida que necesites .</p>
+            <p>‍</p>
+            <h4>¿Administrais vosotros los servidores?</h4>
+            <p>Por supuesto, y si te hemos digitalizado nosotros tu negocio, la puesta en marcha es gratuita, solo
+              cobraremos las cuotas mensuales de utilización.</p>
+            <p>‍</p>
+            <h4>Yo quiero que me alojeis no solo la digitalización de mi negocio, sino también mi WEB corporativa. ¿Eso
+              lo haceis?.</h4>
+            <p>Por supuesto, en este caso la integración de ambas funcionalidades es mucho más sencilla.</p>
+            <p>‍</p>
+            <h4>¿Puedo disponer de correo electrónico?</h4>
+            <p>En el caso de que te alojemos la WEB corporativa, dispondrás de hasta 10 cuentas de correo.</p>
+            <h2>‍</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="start" class="section footer-2 flex flex-vertical">
+      <div class="container ondark container-narrow margin-bottom-large">
+        <div class="col lg-12">
+          <div class="cta-title">Te damos ese pequeño empuje que necesitas</div>
+          <div class="cta-description">Contacta con nosotros</div>
+          <div class="cta-form">
+            <div class="w-form">
+
+
+              <form id="email-form" name="email-form" data-name="Email Form" class="form-2">
+                <input type="email" class="text-field-2 w-input" maxlength="80" name="email-2"
+                  placeholder="Email Address" id="email-2" required>
+                <input type="submit" value="Contactar" data-wait="Please wait..." class="submit-button-3 w-button">
+              </form>
+
+              <div class="correcto" id="mensajeExito_mail">
+                <div>Gracias, tu email nos ha llegado!</div>
+              </div>
+              <div class="fallo" id="mensajeFallo_mail">
+                <div>Oops! Algo ha funcionado mal.</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container ondark container-narrow">
+        <div class="col lg-6 flex flex-vertical sm-12"><img src="images/gaf@2x.svg" width="200" alt="" class="image-8">
+          <!-- <div class="margin-bottom">Fully Autonomous Rocket Deployment Computation System</div>
+        <div class="social-links"><a href="#" class="social"></a><a href="#" class="social"></a><a href="#"
+            class="social"></a><a href="#" class="social"></a></div> -->
+        </div>
+        <!-- <div class="col lg-3 align-top sm-12">
+        <h3 class="footer-widget-title">Product</h3>
+        <div class="footer-links2"><a href="#" class="footer-link-item2">Our Difference</a><a href="#"
+            class="footer-link-item2">How it works</a><a href="#" class="footer-link-item2">Pricing</a><a href="#"
+            class="footer-link-item2">FAQs</a><a href="#" class="footer-link-item2">Demo</a></div>
+      </div> -->
+        <!-- <div class="col lg-3 align-top sm-12"> -->
+        <div class="col lg-8 align-top sm-12">
+          <h3 class="footer-widget-title">Contacto</h3>
+          <div class="contacto">
+            <img src="images/32x32x1.png" alt="icon" />
+            <span class="contacto-datos">C/Primer de Maig, 9</span>
+            <div class="contacto-datos-2">
+              <span>46139 La Pobla de Farnals</span>
+            </div>
+          </div>
+          <div class="contacto">
+            <img src="images/32x32x2.png" alt="icon" />
+            <span class="contacto-datos">info@gafdesign.es</span>
+          </div>
+          <div class="contacto">
+            <img src="images/32x32x3.png" alt="icon" />
+            <span class="contacto-datos">+34 660 300 923</span>
+          </div>
+          <!-- <div class="footer-links2"><a href="#" class="footer-link-item2">Acerca de<br></a> -->
+          <!-- <a href="#" class="footer-link-item2">Blog</a> -->
+          <!-- <a href="#" class="footer-link-item2">Contacto</a> -->
+          <!-- <a href="#" class="footer-link-item2">Partners</a>
+          <a href="#" class="footer-link-item2">Legal</a> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="container ondark container-narrow">
+        <div class="col lg-6 sm-12">
+          <div class="margin-bottom">© 2021 GAFDesign. All rights reserved.</div>
+        </div>
+        <div class="col lg-6 flex sm-12"><a href="#" class="footer-link-item2 margin-right">Website Term</a><a href="#"
+            class="footer-link-item2">Privacy Policy</a></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="js/formulario_mail.js" type="text/javascript"></script>
+
+    <!-- <script src="../js/webflow.js" type="text/javascript"></script> -->
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+
+</html>

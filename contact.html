@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Thu Aug 08 2019 03:21:31 GMT+0000 (UTC)  -->
+<html data-wf-page="5d3fe8812bc0d0ac7cf11dfd" data-wf-site="5d2d514fb78ea809e8838a4c">
+
+<head>
+  <meta charset="utf-8">
+  <title>GafDesign - Marketing para coach</title>
+  <meta content="Contacto" property="og:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+
+  <link href="css/sijitemplate.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script
+    type="text/javascript">WebFont.load({ google: { families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Gothic A1:regular,500,600,700,900"] } });</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+
+  <link href="icons/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="icons/webclip.png" rel="apple-touch-icon">
+
+  <style>
+    .contacto {
+      margin-bottom: 20px;
+      margin-right: 50px;
+    }
+
+    .contacto-datos {
+      margin-bottom: 20px;
+      margin-left: 50px;
+      font-weight: bold;
+    }
+
+    .contacto-datos-2 {
+      margin-bottom: 20px;
+      margin-left: 85px;
+      font-weight: bold;
+    }
+
+    .correcto {
+      border-radius: 25px;
+      display: none;
+      margin-top: 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: blue;
+      color: azure;
+    }
+
+    .fallo {
+      border-radius: 25px;
+      display: none;
+      margin-top: 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: crimson;
+      color: azure;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar ondark w-nav">
+    <div class="container">
+      <div class="col flex lg-12 no-padding-bottom">
+        <a href="index.html" class="brand w-nav-brand">
+          <img src="images/gaf@2x_azul.png" width=175" alt="" class="logo-image">
+        </a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <!-- <a href="features.html" class="nav-link ondark w-nav-link">Características</a> -->
+          <!-- <a href="pricing.html" class="nav-link ondark w-nav-link">Precios del hosting</a> -->
+          <a href="index.html" class="button-nav-link w-inline-block">Home</a>
+          <a href="pricing.html" class="button-nav-link w-inline-block">Precios del hosting</a>
+          <!-- <a href="blog.html" class="nav-link ondark w-nav-link">Blog</a> -->
+
+          <a href="contact.html" class="button-nav-link w-inline-block">
+            <div class="button-nav-link-text color-2">Formulario de Contacto</div>
+          </a>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="icon w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-header dark">
+    <div class="container">
+      <div class="col lg-12">
+        <div class="ultra-big-fat-paragraph no-margin-bottom">Envíanos un mensaje</div>
+        <div>Completa el formulario que se muestra a continuación para que podamos hablar sobre tu visión y como podemos
+          ayudarte.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section overflow-hidden"><img src="images/contact-image.svg" alt="" class="contact-image">
+    <div class="container">
+      <div class="col lg-6 md-12">
+        <div class="w-form">
+
+          <!-- <form id="formulario" name="formulario" data-name="Email Form"> -->
+          <form id="formulario" name="formulario">
+
+            <input type="text" class="text-field w-input" maxlength="90" name="nombre" placeholder="Tu nombre"
+              id="nombre">
+
+            <input type="email" class="text-field w-input" maxlength="90" name="email" placeholder="Tu email" id="email"
+              required>
+
+            <textarea placeholder="Tu mensaje" maxlength="5000" id="mensaje" name="mensaje" required
+              class="contact-textarea margin-bottom w-input"></textarea>
+
+            <input type="submit" value="Enviar" data-wait="Por favor, espere ..." class="submit-button-3 w-button">
+
+          </form>
+
+          <div class="correcto" id="mensajeExito">
+            <div>Gracias! su mensaje ha sido recibido!</div>
+          </div>
+
+          <div class="fallo" id="mensajeError">
+            <div>Oops! Algo ha ido mal en el envío...</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="start" class="section footer-2 flex flex-vertical">
+    <div class="container ondark container-narrow margin-bottom-large">
+      <div class="col lg-12">
+        <div class="cta-title">Te damos ese pequeño empuje que necesitas</div>
+        <div class="cta-description">Contacta con nosotros</div>
+
+      </div>
+    </div>
+    <div class="container ondark container-narrow">
+      <div class="col lg-6 flex flex-vertical sm-12">
+        <img src="images/gaf@2x.svg" width="200" alt="" class="image-8">
+        <!-- <div class="margin-bottom">Fully Autonomous Rocket Deployment Computation System</div>
+          <div class="social-links"><a href="#" class="social"></a><a href="#" class="social"></a><a href="#"
+              class="social"></a><a href="#" class="social"></a></div> -->
+      </div>
+      <!-- <div class="col lg-3 align-top sm-12">
+          <h3 class="footer-widget-title">Product</h3>
+          <div class="footer-links2"><a href="#" class="footer-link-item2">Our Difference</a><a href="#"
+              class="footer-link-item2">How it works</a><a href="#" class="footer-link-item2">Pricing</a><a href="#"
+              class="footer-link-item2">FAQs</a><a href="#" class="footer-link-item2">Demo</a></div>
+        </div> -->
+      <!-- <div class="col lg-3 align-top sm-12"> -->
+      <div class="col lg-8 align-top sm-12">
+        <h3 class="footer-widget-title">Contacto</h3>
+        <div class="contacto">
+          <img src="images/32x32x1.png" alt="icon" />
+          <span class="contacto-datos">C/Primer de Maig, 9</span>
+          <div class="contacto-datos-2">
+            <span>46139 La Pobla de Farnals</span>
+          </div>
+        </div>
+        <div class="contacto">
+          <img src="images/32x32x2.png" alt="icon" />
+          <span class="contacto-datos">info@gafdesign.es</span>
+        </div>
+        <div class="contacto">
+          <img src="images/32x32x3.png" alt="icon" />
+          <span class="contacto-datos">+34 660 300 923</span>
+        </div>
+        <!-- <div class="footer-links2"><a href="#" class="footer-link-item2">Acerca de<br></a> -->
+        <!-- <a href="#" class="footer-link-item2">Blog</a> -->
+        <!-- <a href="#" class="footer-link-item2">Contacto</a> -->
+        <!-- <a href="#" class="footer-link-item2">Partners</a>
+            <a href="#" class="footer-link-item2">Legal</a> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="container ondark container-narrow">
+      <div class="col lg-6 sm-12">
+        <div class="margin-bottom">© 2021 GAFDesign. All rights reserved.</div>
+      </div>
+      <div class="col lg-6 flex sm-12"><a href="#" class="footer-link-item2 margin-right">Website Term</a><a href="#"
+          class="footer-link-item2">Privacy Policy</a></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="js/formulario.js" type="text/javascript"></script>
+
+</body>
+
+</html>
